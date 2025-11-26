@@ -1,0 +1,25 @@
+path: D:\Work\PostGraduate\DI_RP\wandbTest
+model_path: ${path}
+res_path: ${path}
+device: cuda
+d_name: xi'an
+model_name: self_attention_prefix
+method: plan
+x_emb_dim: 100
+n_epoch: 30
+bs: 16
+lr: 0.001
+weight_decay: 1.0e-05
+beta_lb: 0.0001
+beta_ub: 10
+max_T: 100
+gmm_comp: 5
+gmm_samples: 100000
+dims:
+- 100
+- 120
+- 200
+eval_num: 5000
+data_dir: D:\Work\PostGraduate\DI_RP\wandbTest\dataset\filter_od
+time_pickle_path: D:\Work\PostGraduate\DI_RP\wandbTest\dataset\travel_time\time_dist_xian_seg_14-23.npy
+seg_map_path: D:\Work\PostGraduate\DI_RP\wandbTest\dataset\segment_mapping_xian.pkl
